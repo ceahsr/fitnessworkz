@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Cheryl" />
+    <meta name="description" content="home page" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="navbar.css" />
+    <title>Services Fitness Workz</title>
+</head>
+
+<body>
+<div style="width:100%;">
+<!--Navbar-->
+<div class="navbar">
+ <a href="index.html" style="background-color:black;">
+    <img style="float:right" src="images/logo.png" alt="FW logo" style="height:50px;width:auto;">
+  <a href="about.html">ABOUT</a>
+  <a href="services.html" class="active">SERVICES</a>
+  <a href="rates.html">RATES</a>
+  <a href="find-us.html">FIND US</a>
+  <a href="contact-us.html">CONTACT US</a>
+</div>
+
+<div class="split left" style="margin-left:-10%">
+<div class="index">
+<div class="mySlides fade">
+  <img src="images/FW6.jpeg" style="width:120%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/FW7.jpeg" style="width:120%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/FW8.jpeg" style="width:120%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/FW9.jpeg" style="width:120%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/FW10.png" style="width:120%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/FW11.png" style="width:120%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/FW12.png" style="width:120%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/FW13.png" style="width:120%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/FW14.jpeg" style="width:120%">
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" style="margin-right:0%" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+</div>
+
+<br>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+
+}
+</script>
+   
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <h1>AMENITIES</h1>
+    <table style="width:100%">
+  <tr>
+    <th><img src="images/amenities1.png" style="width:100px; padding:0 50px"></th>
+    <th><img src="images/amenities2.png" style="width:100px;padding:0 50px"></th>
+    <th><img src="images/amenities3.png" style="width:100px;padding:0 50px"></th>
+  </tr>  
+  <tr>
+    <th><h3>In-house Fitness Classes</h3></th>
+    <th><h3>Smart Electronic Lockers</h3></th>
+    <th><h3>Shower Rooms</h3></th>
+  </tr>  
+   <tr>
+    <th><img src="images/amenities4.png" style="width:100px; padding:0 50px"></th>
+    <th><img src="images/amenities5.png" style="width:100px;padding:0 50px"></th>
+    <th><img src="images/amenities6.png" style="width:100px;padding:0 50px"></th>
+  </tr>  
+   <tr>
+    <th><h3>Steam Room</h3></th>
+    <th><h3>Pool Access</h3></th>
+    <th><h3>Towels</h3></th>
+  </tr>  
+  </div>
+</div>
+
+</div>
+</body>
+</html>

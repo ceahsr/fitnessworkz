@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Cheryl" />
+    <meta name="description" content="home page" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="navbar.css" />
+  <style>
+    body{margin-left:5%;margin-right:10%}
+  </style>
+    <title>Fitness Workz Khatib</title>
+</head>
+
+<body>
+
+<div class="sidebar">
+  <a href="index.html" class="active" style="background-color:black;">
+    <img style="padding:10px;float:right" src="images/logo.png" alt="FW logo" style="height:50px;width:auto;"><br><br>
+  <a href="about.html">ABOUT</a>
+  <a href="services.html">SERVICES</a>
+  <a href="rates.html">RATES</a>
+  <a href="find-us.html">FIND US</a>
+  <a href="contact-us.html">CONTACT US</a>
+</div>
+
+<div class="index">
+
+<div class="mySlides fade">
+  <img src="images/slide1.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/slide2.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/slide3.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/slide4.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/slide5.jpeg" style="width:100%">
+</div>
+
+
+<a class="prev" style="margin-left:64px" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" style="margin-right:-64px "onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<br>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+
+}
+</script>
+
+
+
+</body>
+</html>
